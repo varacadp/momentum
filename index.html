@@ -33,20 +33,7 @@
 </head>
 
 <body>
-    <!--Mail chimp popup -->
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-    <script>
-    
-    function showMailingPopUp() {
-        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"21422c20916c22b8bee49081d","lid":"923eb7ff36"}) })
-        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-    };
 
-    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-    </script>
-    
-    <!--Mail chimp popup end -->
-    
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -73,10 +60,10 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <img class="img-responsive center-block" src="img/momentum-logo.png" alt="Momentum Logo">
+            <img class="img-responsive center-block momentum-header-img" src="img/momentum-logo.png" alt="Momentum Logo">
             <h3>creating an environment for developers, startup, and industry to colide and learn together</h3>
             <br>
-            <button id="open-popup">Subscribe to our mailing list</button>
+          <button id="open-popup">Subscribe to our mailing list</button>
             <a href="#whatis" class="btn btn-light btn-lg">Sign Up For More Info</a>
         </div>
     </header>
@@ -314,6 +301,12 @@
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
     </script>
+
+    <!--Mail chimp popup -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"21422c20916c22b8bee49081d","lid":"923eb7ff36"}) })</script>
+
+    <!--Mail chimp popup end -->
 
 </body>
 
