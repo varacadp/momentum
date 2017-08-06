@@ -1,5 +1,16 @@
 Unused Code
 
+wget “https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-164.0.0-linux-x86_64.tar.gz”
+
+tar -xvzf google-cloud-sdk-164.0.0-linux-x86_64.tar.gz
+
+../google-cloud-sdk/bin/gsutil rsync -x ".git/*" -dp -R . gs://www.momentumdevcon.com
+
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"21422c20916c22b8bee49081d","lid":"923eb7ff36"}) })</script>
+
 <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="services" class="services bg-primary">
