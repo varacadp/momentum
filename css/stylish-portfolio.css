@@ -5,7 +5,6 @@
  */
 
 /* Global Styles */
-
 html,
 body {
     width: 100%;
@@ -14,6 +13,16 @@ body {
 
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.thedate {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: lighter;
+    color: #FF469B;
+    font-size: 3.5em;
+    letter-spacing: 7px;
+    background-color: rgba(255,255,255,0.7);
+    margin-bottom: 30px;
 }
 
 .text-vertical-center {
