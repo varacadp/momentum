@@ -229,6 +229,24 @@ hr.small {
     margin-bottom: 30px;
 }
 
+.sponsor-lg {
+    margin: 0 auto;
+    height:200px;
+    width: auto;
+}
+
+.sponsor-md {
+    margin: 0 auto;
+    height:150px;
+    width: auto;
+}
+
+.sponsor-sm {
+    margin: 0 auto;
+    height:100px;
+    width: auto;
+}
+
 .img-portfolio {
     margin: 0 auto;
 }
